@@ -1,0 +1,14 @@
+clc ; 
+clear ; 
+close all ;
+x = 0 : pi/100 : 4*pi;
+y = x.^2.*sin(x);
+z = x.^2.*cos(x);
+title ('sine wave and cosine wave');
+plot (x,y ,'b');
+hold on ;
+plot (x , z , 'g');
+hold off ;
+xlabel('x-axis');
+ylabel('y-axis');
+grid on;

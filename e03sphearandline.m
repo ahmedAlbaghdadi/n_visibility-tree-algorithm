@@ -1,0 +1,17 @@
+t =linspace (0,1);
+x= 0-t;
+y=0+5*t;
+z= 0-6*t;
+plot3 (x,y,z);
+grid on;
+xlabel ('x-axis');
+ylabel ('y-axis');
+zlabel ('z-axis');
+hold on ;
+q=0 : pi/100 : 2*pi;
+w = 0 : pi/10 : 2*pi;
+[q,w]=meshgrid(q,w);
+x= 2*sin(q).*cos(w);
+y= 2*sin(q).*sin(w);
+z = 2*cos (q);
+surf(x,y,z);
